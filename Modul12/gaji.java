@@ -13,7 +13,7 @@ public class gaji { //Awal dari kelas gaji
         masaKerja = input.nextInt(); //Input masa kerja dari user
         switch (golongan) {
             case "I":
-                if (masaKerja>=0 && masaKerja<=10){
+                if (masaKerja>=0 && masaKerja<=10){ //Menentukan bonus golongan I berdasarkan lama masa kerja 
                     bonus = gajiPokok * 0.5;
                     totalGaji = gajiPokok + bonus;
                     System.out.println("Selamat! Kamu mendapatkan bonus sebesar Rp"+bonus);
@@ -31,7 +31,7 @@ public class gaji { //Awal dari kelas gaji
                 }
                 break;
             case "II":
-                if (masaKerja>=0 && masaKerja<=10){
+                if (masaKerja>=0 && masaKerja<=10){ //Menentukan bonus golongan II berdasarkan lama masa kerja 
                     bonus = gajiPokok * 0.6;
                     totalGaji = gajiPokok + bonus;
                     System.out.println("Selamat! Kamu mendapatkan bonus sebesar Rp"+bonus);
@@ -49,7 +49,7 @@ public class gaji { //Awal dari kelas gaji
                 }
                 break;
             case "III":
-                if (masaKerja>=0 && masaKerja<=10){
+                if (masaKerja>=0 && masaKerja<=10){ //Menentukan bonus golongan III berdasarkan lama masa kerja 
                     bonus = gajiPokok * 0.7;
                     totalGaji = gajiPokok + bonus;
                     System.out.println("Selamat! Kamu mendapatkan bonus sebesar Rp"+bonus);
@@ -67,7 +67,7 @@ public class gaji { //Awal dari kelas gaji
                 }
                 break;
             case "IV":
-                if (masaKerja>=0 && masaKerja<=10){
+                if (masaKerja>=0 && masaKerja<=10){ //Menentukan bonus golongan IV berdasarkan lama masa kerja 
                     bonus = gajiPokok * 0.8;
                     totalGaji = gajiPokok + bonus;
                     System.out.println("Selamat! Kamu mendapatkan bonus sebesar Rp"+bonus);
