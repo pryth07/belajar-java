@@ -1,16 +1,16 @@
 import java.util.Scanner;
-public class gaji {
+public class gaji { //Awal dari kelas gaji
     public static void main(String[] args) {
-        String golongan;
-        int gajiPokok, masaKerja;
-        double bonus, totalGaji;
+        String golongan; //Deklarasi variabel golongan bertipe string
+        int gajiPokok, masaKerja; //Deklarasi variabel gajiPokok dan masaKerja bertipe integer
+        double bonus, totalGaji; //Deklarasi variabel bonus dan totalGaji bertipe double
         Scanner input = new Scanner(System.in);
         System.out.print("Masukkan gaji pokok: ");
-        gajiPokok = input.nextInt();
+        gajiPokok = input.nextInt(); //Input gaji pokok dari user
         System.out.print("Masukkan golongan (I, II, III, IV): ");
-        golongan = input.next();
+        golongan = input.next(); //Input golongan dari user
         System.out.print("Masukkan masa kerja (tahun): ");
-        masaKerja = input.nextInt();
+        masaKerja = input.nextInt(); //Input masa kerja dari user
         switch (golongan) {
             case "I":
                 if (masaKerja>=0 && masaKerja<=10){
@@ -86,4 +86,4 @@ public class gaji {
                 break;
         }
     }
-}
+} //Akhir dari kelas gaji
