@@ -11,6 +11,7 @@ public class gaji { //Awal dari kelas gaji
         golongan = input.next(); //Input golongan dari user
         System.out.print("Masukkan masa kerja (tahun): ");
         masaKerja = input.nextInt(); //Input masa kerja dari user
+        input.close();
         switch (golongan) {
             case "I":
                 if (masaKerja>=0 && masaKerja<=10){ //Menentukan bonus golongan I berdasarkan lama masa kerja 

@@ -6,6 +6,7 @@ public class HariBulan { //Awal dari kelas HariBulan
         Scanner input = new Scanner(System.in);
         System.out.print("Masukkan bulan (1-12): ");
         bulan = input.nextInt(); // Input bulan dari user
+        input.close();
         switch (bulan) {
             case 1: hari = "Januari memiliki 31 hari";
                 break; // Memberi tahu jumlah hari pada bulan Januari dan hentikan switch

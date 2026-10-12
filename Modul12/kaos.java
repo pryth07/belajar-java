@@ -8,6 +8,7 @@ public class kaos { //Awal dari kelas kaos
         size = input.nextLine(); //Input ukuran kaos dari user
         System.out.print("Masukkan jumlah kaos yang ingin dibeli: ");
         jumlah = input.nextInt(); //Input jumlah kaos yang ingin dibeli dari user
+        input.close();
         switch (size) {
             case "S": harga = 30000;
                     System.out.println("Kaos berukuran S memiliki harga Rp"+harga);
