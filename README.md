@@ -5,6 +5,6 @@
 **NIM:** 265314035
 
 **Tools:**
-  - Java
-  - NetBeans IDE
-  - Visual Studio Code
+* Java
+* NetBeans IDE
+* Visual Studio Code
