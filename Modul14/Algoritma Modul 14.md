@@ -41,8 +41,13 @@ Karena berat mangga harus positif (>0) maka program harus membuat perintah untuk
 5. Menampilkan jumlah mangga dengan kategori biasa, bagus, dan unggul
 6. Selesai
 
-## 4. Pseudocode dari modifikasi terhadap program menghitung rata-rata dalam praktikum sebelumnya sedemikian rupa menjadi program statistic sederhana. Dalam program statistik sederhana tersebut program harus mampu membaca sejumlah (misalnya N buah) data real (double) dari keyboard. Kemudian program menampilkan hitungan statistic dari data tersebut yang meliputi data terbesar, data terkecil, rentang data, rata-rata, variansi dan deviasi standard. 
+## 4. Algoritma dari modifikasi terhadap program menghitung rata-rata dalam praktikum sebelumnya sedemikian rupa menjadi program statistic sederhana. Dalam program statistik sederhana tersebut program harus mampu membaca sejumlah (misalnya N buah) data real (double) dari keyboard. Kemudian program menampilkan hitungan statistic dari data tersebut yang meliputi data terbesar, data terkecil, rentang data, rata-rata, variansi dan deviasi standard. 
 
 1. Mulai
 2. Input N (banyak data yang akan diolah)
-3. 
+3. Loop while selama i kurang dari sama dengan N: input data; deklarasi jumlahKuadrat = jumlahKuadrat + data^2; deklarasi jumlah = jumlah + data; percabangan jika i sama dengan 1, maka max=data. jika tidak, jika data lebih dari max, maka max=data; percabangan jika i sama dengan 1, maka min=data. jika tidak, jika data kurang dari min, maka min=data; increment i
+4. Menghitung rataRata = jumlah/N
+5. Menghitung rentang = max-min
+6. Menghitung variansi = (jumlahKuadrat-N*(rataRata*2))/N
+7. Menghitung deviasi = akar kuadrat dari variansi
+8. Selesai
