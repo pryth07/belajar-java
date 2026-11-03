@@ -26,7 +26,29 @@ Beberapa nilai tersebut antara lain:
 - b. Jumlah akar data yakni $\Sigma (\sqrt{x_i})$
 - c. Jumlah 1/data untuk data yang tidak sama dengan nol yakni $\Sigma (1/x_i)$
 
+1. Mulai
+2. Meminta user untuk input n (berapa nilai yang akan dihitung)
+3. Di dalam perulangan for (i=1; i<=n; i++){
+meminta user untuk input data sebanyak N kali;
+menghitung kuadrat += data$^2$;
+menghitung akar += $\sqrt{data}$;
+melakukan pengecekan if (data!=0){ data=1/data; jumlah +=data;}}
+4. Menampilkan output untuk soal a, b, dan c
+
 ## 3. Algoritma dan program yang dapat menampilkan deret Fibonacci sebanyak N suku memakai perulangan for
+
+1. Mulai
+2. Di dalam perulangan do while, meminta user untuk memasukkan n, diulangi selama n<=0
+3. Di dalam perulangan for (i=0; i<n; i++){
+menampilkan nilai n1;
+menambah jumlah = n1+n2;
+n1=n2;
+n2=jumlah;}
+4. Selesai
 
 ## 4. Algoritma dari program untuk menghitung nilai $y = a x^2 + b x + c$ untuk $x$ mulai dari $x1$ sampai dengan $x2$ dengan pertambahan 0.25 di mana $x1$ dan $x2$ adalah akar dari persamaan $a x^2 + b x + c = 0$
 Nilai dari koefisien a, b dan c dimasukkan lewat keyboard. Nilai $y$ hanya dihitung apabila persamaan tersebut mempunyai dua akar yakni diskriminan (D) > 0.
+
+1. Mulai
+2. Meminta user untuk input nilai a, b, dan c
+3. 
