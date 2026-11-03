@@ -14,7 +14,7 @@ public class fibonacci { //Awal dari kelas fibonacci
         } while (n<=0); //Diulangi selama N belum lebih dari 0
         sc.close(); //Menutup Scanner sc agar tidak terus menggunakan memori
         for (int i = 0; i < n; i++) { //Perulangan selama nilai i kurang dari n, menambah nilai i sebesar 1 setiap perulangan
-            System.out.println(n1+" ");
+            System.out.print(n1+" ");
             jumlah = n1 + n2; //Menghitung jumlah dengan n1+n2
             n1 = n2; //Menginisialisasi variabel n1 sebagai n2
             n2 = jumlah; //Menginisialisasi variabel n2 sebagai jumlah
