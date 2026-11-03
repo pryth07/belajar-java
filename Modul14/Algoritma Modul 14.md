@@ -27,7 +27,7 @@ Karena nilai tidak mungkin negatif maka program harus memastikan bahwa nilai dim
 Berdasarkan berat tersebut program menentukan ada berapa mangga yang berkualitas BIASA, BAGUS dan UNGGUL memakai ketentuan berikut:
 - BIASA : berat kurang dari 500 gram
 - BAGUS : berat lebih besar atau sama dengan 500 gram tetapi kurang dari 750 gram
-- UNGGUL : berat lebih dari 750 gram.
+- UNGGUL : berat lebih dari sama dengan 750 gram.
 
 Karena berat mangga harus positif (>0) maka program harus membuat perintah untuk mengulang pemasukan berat mangga apabila berat yang dimasukkan user masih belum positif memakai perintah do-while.
 
