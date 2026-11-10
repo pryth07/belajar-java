@@ -15,30 +15,31 @@ public class soal2_diagramBatang { //Awal dari kelas soal2_diagramBatang
             }
         } while (n<=0); //Mengulangi blok program di atas selama nilai n<=0
         
-        do {
-            for (int i = 1; i <= n; i++) {
+        for (int i = 1; i <= n; i++) {
+            do {
                 System.out.print("Usia warga "+i+": ");
                 usia = sc.nextInt();
-                if (usia>=0 && usia<=20){       //Jika 0<=usia<=20, tambah variabel nilai a sebesar 1
-                    a++;
-                }
-                else if (usia>=21 && usia<=40){ //Jika tidak, jika 21<=usia<=40, tambah variabel nilai b sebesar 1
-                    b++;
-                }
-                else if (usia>=41 && usia<=60){ //Jika tidak, jika 41<=usia<=60, tambah variabel nilai c sebesar 1
-                    c++;
-                }
-                else if (usia>=61 && usia<=80){ //Jika tidak, jika 61<=usia<=80, tambah variabel nilai d sebesar 1
-                    d++;
-                }
-                else{                           //Jika tidak, tambah variabel nilai e sebesar 1
-                    e++;
-                }
-            }
-            if (usia<0){ //Menampilkan pesan di layar user jika user<=0
+                if (usia<0){ //Menampilkan pesan di layar user jika usia<=0
                 System.out.println("Masukkan 0 atau lebih!");
+                }
+            } while (usia<0); //Mengulangi blok program di atas selama nilai usia<0
+            
+            if (usia>=0 && usia<=20){       //Jika 0<=usia<=20, tambah variabel nilai a sebesar 1
+                a++;
             }
-        } while (usia<0); //Mengulangi blok program di atas selama nilai usia<0
+            else if (usia>=21 && usia<=40){ //Jika tidak, jika 21<=usia<=40, tambah variabel nilai b sebesar 1
+                b++;
+            }
+            else if (usia>=41 && usia<=60){ //Jika tidak, jika 41<=usia<=60, tambah variabel nilai c sebesar 1
+                c++;
+            }
+            else if (usia>=61 && usia<=80){ //Jika tidak, jika 61<=usia<=80, tambah variabel nilai d sebesar 1
+                d++;
+            }
+            else{                           //Jika tidak, tambah variabel nilai e sebesar 1
+                e++;
+            }
+        }
         sc.close();
         System.out.println();
         System.out.println("Distribusi usia "+n+" penduduk di atas adalah:");

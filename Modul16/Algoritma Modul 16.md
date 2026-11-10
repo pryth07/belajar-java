@@ -21,15 +21,15 @@
 3. Melakukan perulangan do while untuk meminta user input n (jumlah penduduk) dan diulangi selama n masih kurang dari sama dengan 0
 4. Melakukan perulangan
 
-       do while{
         for i<=n{
-        meminta input usia warga sebanyak n kali;
+          do while{
+            meminta input usia warga sebanyak n kali;
+          } diulangi selama usia kurang dari 0
         jika usia lebih dari sama dengan 0 dan kurang dari sama dengan 20, maka tambah nilai variabel a sebesar 1;
         jika tidak, jika usia lebih dari sama dengan 21 dan kurang dari sama dengan 40, maka tambah nilai variabel b sebesar 1;
         jika tidak, jika usia lebih dari sama dengan 41 dan kurang dari sama dengan 60, maka tambah nilai variabel c sebesar 1;
         jika tidak, jika usia lebih dari sama dengan 61 dan kurang dari sama dengan 80, maka tambah nilai variabel d sebesar 1;
         jika tidak, maka tambah nilai variabel e sebesar 1;}
-        } diulangi selama usia kurang dari 0
 5. Menampilkan diagram batang:
 - 0-20 = (mengulangi print variabel diagram sebanyak a kali)
 - 21-40 = (mengulangi print variabel diagram sebanyak b kali)
