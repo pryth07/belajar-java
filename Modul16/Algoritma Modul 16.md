@@ -76,8 +76,7 @@
         case 1:{
         do while{
           meminta user untuk input n (jumlah data yang ingin dihitung)
-          }
-        } diulangi selama n<=0
+          } selama n<=0
         do while{
           for i<=n{
             do while{
@@ -90,7 +89,7 @@
             jika tidak, jika usia lebih dari sama dengan 41 dan kurang dari sama dengan 60, maka tambah nilai variabel c sebesar 1;
             jika tidak, jika usia lebih dari sama dengan 61 dan kurang dari sama dengan 80, maka tambah nilai variabel d sebesar 1;
             jika tidak, maka tambah nilai variabel e sebesar 1;
-          } selama n<0
+          }
         }break
 
         case 2:{
