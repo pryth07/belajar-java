@@ -58,8 +58,8 @@
 ## 4. Algoritma dari program paket statistik usia sederhana
 1. Mulai
 2. Deklarasi variabel:
-- n=0, usia, input, jumlah=0, a=0, b=0, c=0, d=0, e=0 bertipe integer
-- rataRata=0, variansi, deviasi, jumlahKuadrat=0 bertipe double
+- input, a=0, b=0, c=0, d=0, e=0 bertipe integer
+- n=0, usia, jumlah=0, rataRata=0, variansi, deviasi, jumlahKuadrat=0 bertipe double
 - diagram = "*" bertipe String
 3. Melakukan perulangan
 

@@ -2,10 +2,10 @@ package Modul16;
 import java.util.Scanner;
 public class soal4_statistikUsia { //Awal dari kelas soal4_statistikUsia
     public static void main(String[] args) {
-        int n=0, usia, input, jumlah=0,a=0,b=0,c=0,d=0,e=0;
-        //Deklarasi variabel n, usia, input, jumlah, a, b, c, d, e bernilai 0 bertipe integer
-        double rataRata=0, variansi, deviasi, jumlahKuadrat = 0;
-        //Deklarasi variabel rataRata, variansi, deviasi, jumlahKuadrat bernilai 0 bertipe double
+        int input, a=0,b=0,c=0,d=0,e=0;
+        //Deklarasi variabel input, a, b, c, d, e bernilai 0 bertipe integer
+        double n=0, usia, jumlah=0, rataRata=0, variansi, deviasi, jumlahKuadrat = 0;
+        //Deklarasi variabel n, usia, jumlah, rataRata, variansi, deviasi, jumlahKuadrat bernilai 0 bertipe double
         String diagram = "*";
         //Deklarasi variabel diagram bernilai * bertipe String
         Scanner sc = new Scanner(System.in);
@@ -23,7 +23,7 @@ public class soal4_statistikUsia { //Awal dari kelas soal4_statistikUsia
             case 1:{ //Kasus pertama
                 do {
                     System.out.print("Masukkan jumlah data yang ingin dihitung: ");
-                    n = sc.nextInt(); //Menyimpan input user pada variabel n
+                    n = sc.nextDouble(); //Menyimpan input user pada variabel n
                     if (n<=0){ //Menampilkan pesan jika user memasukkan n<=0
                         System.out.println("Masukkan lebih dari 0!");
                     }
@@ -32,7 +32,7 @@ public class soal4_statistikUsia { //Awal dari kelas soal4_statistikUsia
                 for (int i = 1; i <= n; i++) { //Mengulangi selama i<=n, menambah nilai i sebesar 1 setiap perulangan
                     do {
                         System.out.print("Usia warga "+i+": ");
-                        usia = sc.nextInt(); //Menyimpan input user pada variabel usia
+                        usia = sc.nextDouble(); //Menyimpan input user pada variabel usia
                         if (usia<0){ //Menampilkan pesan jika user memasukkan usia<0
                             System.out.println("Masukkan 0 atau lebih!");
                         }
@@ -63,8 +63,8 @@ public class soal4_statistikUsia { //Awal dari kelas soal4_statistikUsia
                 }
                 else{ //Jika tidak, hitung rataRata dan tampilkan hasilnya pada layar user
                     rataRata = jumlah/n; //Hitung rataRata dengan rumus jumlah/n
-                    System.out.println("Rumus rata-rata: "+jumlah+"/"+n);
-                    System.out.println("Rata-rata adalah: "+rataRata);
+                    System.out.printf("Rumus rata-rata: %.0f/%.0f%n", jumlah, n);
+                    System.out.printf("Rata-rata adalah: %.2f%n", rataRata);
                 }
             } break; //Keluar dari kasus kedua
                 
@@ -76,8 +76,9 @@ public class soal4_statistikUsia { //Awal dari kelas soal4_statistikUsia
                     variansi = (jumlahKuadrat-n*(rataRata*rataRata))/n; //Hitung variansi
                     deviasi = Math.sqrt(variansi); //Hitung deviasi
                     System.out.println("Rumus deviasi: akar kuadrat dari variansi");
-                    System.out.println("Rumus variansi: ("+jumlahKuadrat+" - "+n+" * "+rataRata+"^2) / n");
-                    System.out.println("Deviasi standard adalah: "+deviasi);
+                    System.out.printf("Rumus variansi: (%.0f - %.0f * %.2f^2) / %.0f%n", jumlahKuadrat, n, rataRata, n);
+                    System.out.printf("Variansi adalah: %.2f%n", variansi);
+                    System.out.printf("Deviasi standard adalah: %.2f%n", deviasi);
                 }
             } break; //Keluar dari kasus ketiga
             
