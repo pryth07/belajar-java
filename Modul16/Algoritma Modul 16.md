@@ -100,7 +100,9 @@
 
         case 3:{
           jika rataRata<=0, tampilkan pesan bahwa user belum menghitung rata rata;
-          jika tidak, menghitung variansi dengan rumus (jumlahKuadrat-n*rataRata^2)/n; menghitung deviasi dengan rumus akar kuadrat variansi; tampilkan hasil pada layar user
+          jika tidak, menghitung variansi dengan rumus (jumlahKuadrat-n*rataRata^2)/n;
+                      menghitung deviasi dengan rumus akar kuadrat variansi;
+                      tampilkan hasil pada layar user;
         }break
         
         case 4:{
