@@ -2,7 +2,7 @@ package Modul18;
 import java.util.Scanner;
 public class soal2 { //Awal dari kelas soal2
     public static void main(String[] args) {
-        int jumlah=0, rataRata, max=1, min=1;
+        int jumlah=0, rataRata, max=0, min=0;
         //Deklarasi variabel jumlah, rataRata, max, dan min bernilai 0 bertipe integer
         int[] hitung; //Deklarasi variabel hitung bertipe integer array
         hitung = new int[5]; //Deklarasi jumlah indeks array hitung
@@ -11,23 +11,20 @@ public class soal2 { //Awal dari kelas soal2
         for(int i = 0; i < hitung.length; i++){ //Perulangan for i=0 diulangi selama i<5, menambah nilai i setiap perulangan
             System.out.print("Data ke "+(i+1)+" : ");
             hitung[i] = sc.nextInt(); //Input data dari user untuk dimasukkan ke dalam array hitung
-            if (hitung[i]==0){ //Jika index i array hitung sama dengan 1,
+            if (i==0){ //Jika i sama dengan 0,
                 max=hitung[i]; //set max sama dengan index i array hitung
-                min=hitung[i];
             }
-            else{
-                if (hitung[i]>max){ //Jika tidak, jika index i array hitung lebih besar dari max,
-                    max=hitung[i]; //set max sama dengan index i array hitung
-                }
-                if (hitung[i]<min){ //Jika tidak, jika index i array hitung lebih kecil dari min,
-                    min=hitung[i]; //set min sama dengan index i array hitung
-                }
+            else if (hitung[i]>max){ //Jika tidak, jika index i array hitung lebih besar dari max,
+                max=hitung[i]; //set max sama dengan index i array hitung
             }
-            if (hitung[i]==1){ //Jika index i array hitung sama dengan 1,
+            if (i==0){ //Jika i sama dengan 0,
+                min=hitung[i]; //set min sama dengan index i array hitung
+            }
+            else if (hitung[i]<min){ //Jika tidak, jika index i array hitung lebih kecil dari min,
                 min=hitung[i]; //set min sama dengan index i array hitung
             }
         }
-        sc.close();
+        sc.close(); //Menutup Scanner sc agar tidak terus menggunakan memori
         for (int i = 0; i < hitung.length; i++){ //Perulangan for i=0 diulangi selama i<5, menambah nilai i setiap perulangan
             System.out.println("Data ke-"+(i+1)+" adalah "+hitung[i]);
             jumlah+=hitung[i]; //Menambah nilai variabel jumlah dengan nilai index i array hitung

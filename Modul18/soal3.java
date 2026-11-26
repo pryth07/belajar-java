@@ -13,13 +13,13 @@ public class soal3 {
         for(int i = 0; i < n; i++){ //Perulangan for i=0 diulangi selama i<n, menambah nilai i setiap perulangan
             System.out.print("Data ke "+(i+1)+" : ");
             hitung[i] = sc.nextInt();
-            if (hitung[i]==1){ //Jika index i array hitung sama dengan 1,
+            if (i==0){ //Jika i sama dengan 1,
                 max=hitung[i]; //set max sama dengan index i array hitung
                 }
             else if (hitung[i]>max){ //Jika tidak, jika index i array hitung lebih besar dari max,
                 max=hitung[i]; //set max sama dengan index i array hitung
                 }
-            if (hitung[i]==1){//Jika index i array hitung sama dengan 1,
+            if (i==0){//Jika i sama dengan 1,
                 min=hitung[i]; //set min sama dengan index i array hitung
             }
             else if (hitung[i]<min){ //Jika tidak, jika index i array hitung lebih kecil dari min,

@@ -8,3 +8,5 @@
 * Java
 * NetBeans IDE
 * Visual Studio Code
+
+<img src="https://i.redd.it/sbjxnpc7p6wg1.jpeg" alt="Your human-made gem entertains me" width="500"/>

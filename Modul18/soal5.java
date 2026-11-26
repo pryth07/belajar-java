@@ -18,11 +18,11 @@ public class soal5 {
         int [] ganjil = new int[a];     //Deklarasi variabel ganjil array dan banyak index sebanyak a
         int [] genap = new int[b];      //Deklarasi variabel genap array dan banyak index sebanyak b
         for (int i = 0; i < bil.length; i++) {
-        //Perulangan for i=0 diulangi selama i<n, menambah nilai i setiap perulangan
-            if (bil[i] % 2 >= 1){       //Jika elemen array index i habis dibagi 2 lebih dari sama dengan 1
+        //Perulangan for i=0 diulangi selama i < banyak index array bil, menambah nilai i setiap perulangan
+            if (bil[i] % 2 > 0){       //Jika elemen array index i tidak habis dibagi 2,
                 ganjil[c++] += bil[i];  //tambah ganjil index c dengan bil index i
             }
-            else{                       //Jika tidak
+            else{                       //Jika tidak,
                 genap[d++] += bil[i];   //tambah genap index d dengan bil index i
             }
         }
